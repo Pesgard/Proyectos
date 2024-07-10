@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema Compusiete</title>
+        <link rel="stylesheet" href="/views/estilos.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <nav class="sidebar close">
+            <header>
+
+                <div class="text logo">
+                    <span class="name"> Compusiete </span>
+                    <span class="profe"> Luis Carlos </span>
+                </div>
+            <i class="bx bx-menu toggle"></i>
+
+
+            </header>
+
+            <div class="menu-bar">
+                <div class="menu">
+                    <li class="search-box">
+                        <i class="bx bx-search icon" title="Buscar"></i>
+                        <input type="text" placeholder="Buscar...">
+                    </li>
+
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-barcode icon"  title="Punto de Venta"></i>
+                                <span class="text nav-text">Punto de Venta</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-file icon" title="Facturacion"></i>
+                                <span class="text nav-text">Facturacion</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-dollar icon" title="Complementos"></i>
+                                <span class="text nav-text">Complementos</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-printer icon" title="Reportes"></i>
+                                <span class="text nav-text">Reportes</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bxs-basket icon" title="Inventarios"></i>
+                                <span class="text nav-text">Inventarios</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                            <i class="bx bx-loader-circle icon" title="Procesos"></i>
+                                <span class="text nav-text">Procesos</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bxs-credit-card-front icon" title="Notas de Credito"></i>
+                                <span class="text nav-text">Notas de Credito</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-clipboard icon" title="Cotizaciones"></i>
+                                <span class="text nav-text">Cotizaciones</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-move icon" title="Movimientos"></i>
+                                <span class="text nav-text">Movimientos</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-user-plus icon" title="Registro de Informacion"></i>
+                                <span class="text nav-text">Registro de Info...</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-cog icon" title="Configuracion"></i>
+                                <span class="text nav-text">Configuracion</span>
+                            </a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="#">
+                            <i class="bx bx-log-out icon" title="Salir"></i>
+                            <span class="text nav-text">Salir</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class="bx bx-moon icon moon"></i>
+                            <i class="bx bx-sun icon sun"></i>
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                    </li>
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            <div class="text">      
+                <h3>Reportes</h3>  
+            </div>   
+            
+            <div class="Content-form">
+                <form action="/validar" method="post">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>    
+                    </div>
+            
+                <div>
+                        <label for="name">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" required>
+                </div>
+            
+                <div>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                
+                    <div>
+                        <input type="submit" value="Guardar"> <input type="submit" value="Cancelar">
+                    </div>   
+                    
+                </form>
+                
+            </div>
+            
+        </section>
+
+       <script src="script.js"></script>
+    </body>
+</html>
